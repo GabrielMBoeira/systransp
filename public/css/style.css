@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+  }
+  
+  body.body {
+    background-image: url("../images/truck.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  body.body .box {
+    min-width: 300px;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  body.body form {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body.body .text-box {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
