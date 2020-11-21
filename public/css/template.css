@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main.main {
+    background-color: #5B6C5D;
+    flex-grow: 1;
+  }
+    
+  /* Footer Pagina*/
+  footer.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 400;
+    justify-content: flex-end;
+  }
+  

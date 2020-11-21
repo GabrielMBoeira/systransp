@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="../../public/css/fretes_em_aberto.css" />
+    <link rel="stylesheet" href="../../public/css/template.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <title>ChargeLog</title>
+    <title>Systranp</title>
   </head>
   <body class="body">
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Fretes</a>
+        <a class="navbar-brand" href="#">Systransp</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -29,13 +29,16 @@
         <div class="collapse navbar-collapse" id="nav-collapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="criar_frete.html">Novo frete</a>
+              <a class="nav-link" href="criar_frete.php">Novo frete</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="filtros.html">Filtros</a>
+              <a class="nav-link" href="fretes_em_aberto.php">Fretes pendentes</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="cadastro.html">Cadastro</a>
+              <a class="nav-link" href="#">Filtros</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="cadastro_veiculo.php">Cadastro de veículo</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">

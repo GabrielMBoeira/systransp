@@ -1,3 +1,4 @@
+  
   /* Box Carga*/
   main.main .box {
     border-radius: 10px;
@@ -26,9 +27,16 @@
     font-size: 0.8rem;
   }
   
-  main.main .content-table {
-    width: 100%;
-    height: 100%;
+  main.main .destino > input {
+    width: 250px;
+  }
+  
+  main.main .km > input {
+    width: 67px;
+  }
+  
+  main.main .form-control-sm {
+    border: solid 1px #ddd;
   }
   
   /* Box Footer*/
@@ -48,3 +56,15 @@
     justify-content: flex-end;
     align-items: center;
   }
+  
+  /* Footer Pagina*/
+  footer.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 400;
+    justify-content: flex-end;
+  }
+  
