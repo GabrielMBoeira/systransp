@@ -1,8 +1,8 @@
 <?php
-require_once('template/header.php');
+require_once('../template/header.php');
 ?>
 
-<link rel="stylesheet" href="../../public/css/cadastro_veiculo.css" />
+<link rel="stylesheet" href="../../../public/css/cadastro_veiculo.css" />
 <main class="main">
   <div class="content">
     <div class="box">
@@ -11,7 +11,7 @@ require_once('template/header.php');
       </div>
       <div class="body-box">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 mt-2">
             <label for="">Placa</label>
             <input type="text" class="form-control" />
           </div>
@@ -27,12 +27,6 @@ require_once('template/header.php');
             </select>
           </div>
         </div>
-        <div class="checkbox mt-2">
-          <label class="text-danger"> <b>Selecione o tipo de tributação do veículo</b></label><br>
-          <input type="radio" name="radio" value="comIcms">Com ICMS<br>
-          <input type="radio" name="radio" class="mt-2" value="semIcms">Sem ICMS<br>
-        </div>
-        
         <div class="d-flex justify-content-end mt-2">
           <button class="btn btn-outline-primary mt-2">
             Salvar
@@ -45,5 +39,5 @@ require_once('template/header.php');
 </main>
 
 <?php
-require_once('template/footer.php');
+require_once('../template/footer.php');
 ?>

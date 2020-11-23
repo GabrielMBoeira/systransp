@@ -5,14 +5,14 @@
   }
   
   html,
-  body {
+  body { 
     height: 100vh;
     display: flex;
     flex-direction: column;
   }
   
   main.main {
-    background-color: #5B6C5D;
+    background-color: #cacce8;
     flex-grow: 1;
   }
     

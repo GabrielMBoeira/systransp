@@ -1,8 +1,8 @@
 <?php
-require_once('template/header.php');
+require_once('../template/header.php');
 ?>
 
-<link rel="stylesheet" href="../../public/css/fretes_em_aberto.css" />
+<link rel="stylesheet" href="../../../public/css/fretes_em_aberto.css" />
 <main class="main">
   <div class="content">
     <div class="box">
@@ -47,5 +47,5 @@ require_once('template/header.php');
 </main>
 
 <?php
-require_once('template/footer.php');
+require_once('../template/footer.php');
 ?>
