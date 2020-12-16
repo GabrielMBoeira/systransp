@@ -25,11 +25,11 @@ session_start();
       ?>
       <div class="form-group">
         <label for="login" class="text-box">Login:</label>
-        <input type="text" name="login" class="form-control" />
+        <input type="text" name="usuario" class="form-control" />
       </div>
       <div class="form-group">
         <label for="password" class="text-box ">Senha:</label>
-        <input type="text" name="senha" class="form-control" />
+        <input type="password" name="senha" class="form-control" />
         <div class="d-flex justify-content-end mt-2">
           <button type="submit" name="entrar" class="btn btn-primary btn-sm">
             Entrar

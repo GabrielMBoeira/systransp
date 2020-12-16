@@ -6,15 +6,15 @@ if (isset($_POST['entrar'])) {
 
     $conn = novaConexao();
 
-    $login = mysqli_real_escape_string($conn, $_POST['login']);
+    $usuario = mysqli_real_escape_string($conn, $_POST['usuario']);
     $senha = mysqli_real_escape_string($conn, $_POST['senha']);
 
-    $login = htmlspecialchars($login);
+    $usuario = htmlspecialchars($usuario);
     $senha = htmlspecialchars($senha);
 
-    if (existLogin($login, $senha)) {
+    if (existLogin($usuario, $senha)) {
         header("location: ../rot001/fretes_em_aberto.php");
-        $_SESSION['login'] = $login;
+        $_SESSION['usuario'] = $usuario;
     } else {
         header("location: ../../../index.php");
         $_SESSION['msg-login'] = "<div class='alert alert-danger' role='alert'>Senha ou login inválido</div>";

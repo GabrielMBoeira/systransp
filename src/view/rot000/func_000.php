@@ -2,15 +2,15 @@
 session_start();
 require_once('../../db/conexao.php');
 
-function existLogin($login, $senha)
+function existLogin($usuario, $senha)
 {
 
     $conn = novaConexao();
 
-    $sql = "SELECT * FROM login WHERE login = ? AND senha = ?";
+    $sql = "SELECT * FROM login WHERE usuario = ? AND senha = ?";
     $stmt = $conn->prepare($sql);
 
-    $stmt->bind_param('ss', $login, $senha);
+    $stmt->bind_param('ss', $usuario, $senha);
 
     $stmt->execute();
     $resultado = $stmt->get_result();
