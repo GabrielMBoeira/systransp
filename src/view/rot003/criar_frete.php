@@ -131,7 +131,7 @@ require_once('../template/header.php');
         </div>
 </main>
 
-<script src="ajax_003.js"></script>
+<script src="003.js"></script>
 
 <?php
 require_once('../template/footer.php');

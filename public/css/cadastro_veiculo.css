@@ -23,7 +23,7 @@
   /* Box Corpo*/
   main.main .body-box {
     font-size: 0.8rem;
-    height: 220px;
+    min-height: 220px;
     padding: 20px;
   }
   
