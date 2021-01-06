@@ -1,6 +1,10 @@
 <?php
+session_start();
+
 require_once(dirname(__FILE__, 3) . '/db/conexao.php');
 require_once(dirname(__FILE__, 3) . '/model/Veiculo.php');
+
+$idUsuario = $_SESSION['idUsuario'];
 
 function pegarCategoria($placa)
 {
@@ -36,9 +40,9 @@ function existICMSUsuario($usuario)
 {
     $conn = novaConexao();
 
-    $sql = 'SELECT icms FROM login WHERE usuario = ?';
+    $sql = 'SELECT icms FROM login WHERE id = ?';
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param('s', $usuario);
+    $stmt->bind_param('s', $idUsuario);
     $stmt->execute();
     $result = $stmt->get_result();
 
