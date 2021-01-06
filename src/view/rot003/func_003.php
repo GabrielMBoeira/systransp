@@ -10,7 +10,7 @@ function pegarCategoria($placa)
     $stmt = $conn->prepare($sql);
     $stmt->bind_param('s', $placa);
     $stmt->execute();
-
+ 
     $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {

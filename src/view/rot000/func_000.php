@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 require_once('../../db/conexao.php');
 
 function existLogin($usuario, $senha)
@@ -16,7 +16,9 @@ function existLogin($usuario, $senha)
     $resultado = $stmt->get_result();
 
     if ($resultado->num_rows > 0) {
-        return true;
+        $row = $resultado->fetch_assoc();
+        $idUsuario = $row['id'];
+        return $idUsuario;
     } else {
         return  false;
     }

@@ -36,7 +36,7 @@
             <a class="nav-link" href="#">Filtros</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="../rot002/cadastro_veiculo.php">Cadastro de veículo</a>
+            <a class="nav-link" href="../rot002/cadastro_veiculo.php">Cadastrar de veículo</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="../../../index.php">Sair</a>

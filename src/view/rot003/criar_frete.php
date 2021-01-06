@@ -9,7 +9,7 @@ require_once('../template/header.php');
             <div class="header-box">
                 <span>NOVO FRETE</span>
             </div>
-            <div class="body-box">
+            <div class="body-box"> 
                 <div class="data mt-2 ml-2">
                     <span class="icone-obrigatorio">*</span>
                     <label for="data">Data</label>

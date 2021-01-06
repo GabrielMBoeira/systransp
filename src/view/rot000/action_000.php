@@ -1,4 +1,5 @@
-<?php
+<?php 
+session_start();
 require_once('../../db/conexao.php');
 require_once('func_000.php');
 
@@ -12,9 +13,12 @@ if (isset($_POST['entrar'])) {
     $usuario = htmlspecialchars($usuario);
     $senha = htmlspecialchars($senha);
 
-    if (existLogin($usuario, $senha)) {
+    $idUsuario = existLogin($usuario, $senha);
+
+
+    if ($idUsuario > 0 ) {
+        $_SESSION['idUsuario'] = $idUsuario;
         header("location: ../rot001/fretes_em_aberto.php");
-        $_SESSION['usuario'] = $usuario;
     } else {
         header("location: ../../../index.php");
         $_SESSION['msg-login'] = "<div class='alert alert-danger' role='alert'>Senha ou login inválido</div>";
